@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <button id="settings-btn" class="setings-btn">
+        <i class="fas fa-cog"></i>
+    </button>
+    
+    <div class="settings" id="settings">
+        <form action="#" id="settings-form">
+            <div>
+                <label for="difficulty">difficulty</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>  
+                    <option value="medium">medium</option>
+                    <option value="hard">hard</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2> Speed Typer</h2>
+        <small>Type the following</small>   
+        <h1 id="word"></h1>
+
+        <input type="text" id="text" autocomplete="off" placeholder="Type your word here...">
+
+        <p class="time-container">
+            Time left: <span id="time">10s</span>
+        </p>
+
+        <p class="score-container">
+            Score:O <span id="score">0</span>
+        </p>
+
+        <div class="end-game-cotainer" id="end-game-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
